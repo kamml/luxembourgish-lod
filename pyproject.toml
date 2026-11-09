@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "luxembourgish-lod"
+version = "0.1.0"
+description = "Deterministic, LOD-backed verification of Luxembourgish text: lexicon, gender, plural, N-rule, articles, word-order attestation."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [{ name = "Lisa Kamm" }]
+keywords = ["luxembourgish", "letzebuergesch", "LOD", "dictionary", "nlp", "verification", "llm"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Natural Language :: Luxembourgish",
+  "Topic :: Text Processing :: Linguistic",
+]
+
+[project.urls]
+Homepage = "https://github.com/kamml/luxembourgish-lod"
+"LOD open data" = "https://data.public.lu/en/datasets/6407416d041911a8915b1071"
+
+[project.scripts]
+lod-verify = "luxembourgish_lod.verify:main"
+
+[tool.setuptools]
+packages = ["luxembourgish_lod"]
