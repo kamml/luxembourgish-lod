@@ -124,8 +124,8 @@ The code and documentation in this repository are released under the MIT License
 
 ## Background
 
-This grew out of a year of studying for Luxembourg's Sproochentest with an AI as the main
-study partner, and the discovery that the AI's errors were confident, plausible and
-unflagged — exactly the kind no learner can catch. The verification architecture here is the
-answer that worked: assume the model is wrong and make it prove otherwise against the
-dictionary, every time.
+This grew out of studying for Luxembourg's Sproochentest. The study itself ran on lessons,
+tutors and textbooks; an AI assistant was one tool alongside them, for drills and vocabulary
+work. Its errors turned out to be confident, plausible and unflagged — exactly the kind a
+learner has no way to catch. The verification architecture here is what fixed that: assume
+the model is wrong and make it prove otherwise against the dictionary, every time.
